@@ -2,6 +2,16 @@
 
 This project uses a Convolutional Neural Network (CNN) to classify brain tumors from MRI images. It leverages TensorFlow and Keras to build, train, and evaluate a deep learning model capable of distinguishing between different tumor types.
 
+## 📌 Project Overview
+
+This project demonstrates how to:
+
+- Load and preprocess MRI images using TensorFlow's `image_dataset_from_directory`
+- Build a CNN model for multi-class classification
+- Train and validate the model using a split dataset
+- Visualize training performance
+- Evaluate model accuracy on unseen data
+
 ## 📂 Dataset
 
 The dataset should be organized in the following structure:
@@ -16,21 +26,19 @@ Each subfolder under `Training` should contain MRI images corresponding to a spe
 
 ## 🧪 Model Architecture
 
-- Input: 64x64 RGB MRI images
-- Layers:
-  - Rescaling
-  - Conv2D + ReLU
-  - MaxPooling
-  - Conv2D + ReLU
-  - MaxPooling
-  - Flatten
-  - Dense + ReLU
-  - Dropout
-  - Dense + Softmax (output)
+The CNN model includes:
+
+- `Rescaling`: Normalize pixel values to [0, 1]
+- `Conv2D` layers: Extract spatial features
+- `MaxPooling`: Downsample feature maps
+- `Flatten`: Convert 2D features to 1D
+- `Dense` layers: Learn complex patterns
+- `Dropout`: Prevent overfitting
+- `Softmax`: Output probabilities for each class
 
 ## ⚙️ Setup
 
-pip install tensorflow matplotlib
+pip install tensorflow keras matplotlib numpy pandas 
 
 ## 🧪 Applications
 Medical diagnostics
