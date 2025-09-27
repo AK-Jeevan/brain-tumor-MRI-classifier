@@ -55,6 +55,7 @@ Share performance benchmarks
 ### To contribute:
 
 git clone https://github.com/yourusername/brain-tumor-mri-classifier.git
+
 cd brain-tumor-mri-classifier
 
 Submit a pull request with your improvements.
